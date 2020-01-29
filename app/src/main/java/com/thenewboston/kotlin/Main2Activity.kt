@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_main2.*
 
 class Main2Activity : AppCompatActivity() {
@@ -12,14 +13,17 @@ class Main2Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
 
-        button4.setOnClickListener {
+
+
+        /*button4.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
-        }
+        }*/
     }
 
     fun clickMe(view: View){
         val intent = Intent(this, Main3Activity::class.java)
+        intent.putExtra("Naveen", "Hello")
         startActivity(intent)
     }
 }
