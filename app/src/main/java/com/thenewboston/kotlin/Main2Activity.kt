@@ -13,12 +13,10 @@ class Main2Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
 
-
-
-        /*button4.setOnClickListener {
+        button4.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
-        }*/
+        }
     }
 
     fun clickMe(view: View){

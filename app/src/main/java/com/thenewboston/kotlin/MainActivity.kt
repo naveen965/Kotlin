@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
+
     fun onClick() {
         /*var text = findViewById<TextView>(R.id.button)
         text.setText("hello")*/
